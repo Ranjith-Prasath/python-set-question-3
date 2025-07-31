@@ -1,0 +1,96 @@
+1.	Scenario: A user is required to enter a valid number in a form, but users sometimes input invalid data.
+ Write logic to repeatedly prompt the user until they enter a valid integer
+SOLUTION : 
+    > get an input from the user
+    > use the try- except to check whether the input is integer or not
+    > number == int(number), print -> it is a valid  data
+    > except , print -> please enter a valid input data
+
+2.	Scenario: A data analysis tool processes a list of numbers and needs to identify the most frequently occurring value.
+ Write logic to find the most frequently occurring number in a given list
+SOLUTION : 
+    >get a list from the user
+    > use dictionary to get a value
+    > using for loop and if condition  increase store the count and value in the dictionary
+    > then print the most occured value
+
+3.	Scenario: A text-processing application needs to compare words and check if they are anagrams (contain the same letters in a different order).
+ Write logic to determine whether two given strings are anagrams.
+
+SOLUTION : 
+    > get two input string from the user
+    > sort both the strings 
+    > if string  1 and string 2 are equal , print ,it is an anagrams
+    > else , print -> NOT an anagram
+
+4.	Scenario: A speech analysis program needs to count the number of vowel sounds in a given input.
+ Write logic to count the number of vowels in a given string.
+SOLUTION : 
+    >get a word from the user
+    > declare vowel words in a variable as a string
+    > using for and if , check the condition that if the temp var has any of the vowel word
+    > add 1 to the count
+    > print the count after exits from the for loop
+
+
+5.	Scenario: A text-editing software includes a feature to reverse the order of words in a sentence for stylistic effects.
+ Write logic to reverse the order of words in a sentence while keeping the words themselves intact.
+
+SOLUTION  :
+    >get an input from the user
+    > declare a new variable and use the split function to split the sentence into words  for storing the reversed sentence
+    > reverse the sentence using string inbuilt function , ' '.join(words[::-1])
+    > print the reversed sentence
+
+6.	Scenario: A missing number is detected in a sequence of values stored in a database.
+ Write logic to find the missing number in a list containing n-1 numbers from 1 to n.
+
+SOLUTION : 
+    > get a list input from the user
+    > use function : 
+    > in sequence of numbers, find totalsum - actual sum
+    > formula is n(n+1)/2 , now you  will get the n value -> total sum
+    > for actual sum, sum(list) 
+    > subtract both total sum and actual sum -> missing number
+    > print it
+
+7.	Scenario: An ATM machine processes withdrawal requests and needs to ensure that users cannot withdraw more than their account balance.
+ Write logic to allow a withdrawal only if the balance is sufficient.
+
+SOLUTION : 
+    > get an input from the user( current balalnce)
+    > another input for (withdrawal request)
+    > if withdrawal request is more than the current balance
+    > print insuffucient balance
+    > Else, withdraw the money and subtract current balance and withdrawal money 
+    > and store it in the current balance
+
+8.	Scenario: A system needs to verify whether a given dataset contains duplicate entries.
+ Write logic to check whether a given list contains duplicate values
+
+SOLUTION : 
+    > Get a list from the user
+    > initialize a dictionary  # d = {}
+    > using for loop , try to run a list, initialize 1 , if it is not in d, for every value
+    > if the same number occurs twice increase the count to 2 , and print the duplicated value
+
+9.	Scenario: A digital calculator includes a feature to sum the digits of a number for verification purposes.
+ Write logic to calculate the sum of all digits in a given integer
+
+SOLUTION : 
+    > get an input from the user
+    > using modulus operator and divided by 10
+    > take the last digit add it with the other upcoming digits
+    > print the result
+
+
+10.	Scenario: A language-learning app wants to verify whether a given sentence is a pangram (contains every letter of the alphabet at least once).
+ Write logic to check if a given sentence is a pangram.
+
+SOLUTION : 
+    > get a string input from the user
+    > using function , get a lowercase value of ascii character and store it  in a variable
+    > now, using issubeset function , compare both the input text and the ascii lowercase characters
+    > if both are same , it returns true and the pangram message will display
+    > else , it returns false, not a pangram will display
+
